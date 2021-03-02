@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB Webpage</title>
+    <style>
+        #main-nav
+        {
+            background-color: blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* flex-direction: column; */
+        }
+        #nav-items a
+        {
+            color: white;
+            text-decoration: none;
+        }
+        img
+        {
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        #new
+        {
+            position: relative;
+            top: -300px;
+            left: 700px;
+        }
+        #main-footer
+        {
+            position: relative;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            top: -180px;
+        }
+        @media (min-width: 200px) and (max-width: 600px){
+            #main-nav
+            {
+                flex-direction: column;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 900px){
+            #main-nav
+            {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="main-nav">
+        <h1 style="color:white;">facebook</h1>
+        <div id="nav-items">
+            <a href="#"><label>Email or phone</label></a>
+            <td><input type="text"></td>
+            <a href="#"><label>Password</label></a>
+            <td><input type="password"></td>
+            <a href="#"><input type="submit" value="Login"></a>
+        </div>
+    </nav>
+    <img src="https://cdn.theatlantic.com/thumbor/w3fyY0fi_LhyCBqJOK_AX_GUnaQ=/2x73:3496x2039/720x405/media/img/2018/07/RTR4C0UZ/original.jpg" width="600px">
+    <div id="new">
+        <h1>Create a new account</h1>
+        <table>
+            <tr>
+                <td><input type="text" placeholder="First name"></td>
+                <td><input type="text" placeholder="Surname"></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Mobile number or email adress"></td>
+            </tr>
+            <tr>
+                <td><input type="password" placeholder="Password"></td>
+            </tr>
+            <tr>
+                <td><label>Date of birth</label></td>
+            </tr>
+            <tr>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+            </tr>
+            <tr> <td><input type="radio">Female</td>
+                <td><input type="radio">Male</td>
+                <td><input type="radio">Custom</td></tr>
+            <tr>
+               <td> <a href="#"><input type="submit" value="Sign Up"></a></td>
+            </tr>
+        </table>
+    </div>
+    <nav id="main-footer">
+        <footer>
+            <p>Developed and maintained by</p>
+            <p>Facebook &copy; 2021 &trade;</p>
+        </footer>
+    </nav>
+</body>
+</html>
